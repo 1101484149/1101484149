@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: #eee;
+        }
+        .yinying {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+        }
+        .flex{
+            display: flex;
+        }
+        .Baise{
+            background-color: white;
+        }
+        .flex1{
+            flex:1;
+        }
+        .column{
+            flex-direction: column;        
+        }
+        .mg8{
+            margin: 8px;
+        }
+        .mgr8{
+            margin-right: 8px;
+        }
+        .mgt8{
+            margin-top: 8px;
+        }
+        .Daohang{
+            padding: 10px 20px;
+            border-bottom: 1px solid grey;
+            font-size: 14px;
+            color: #666;
+        }
+        .zhuZhoujuZhong{
+            justify-content: center;
+        }
+        .jiaoChazhoujuZhong{
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="flex">
+    <!--侧边栏-->
+    <div style="width:200px;z-index: 2;" class="Baise yinying">
+        <!-- 头像栏 -->
+        <div style="padding: 10px;;align-items: center;border: 1px solid #999;" class="flex">
+            <img
+                src="http://mms0.baidu.com/it/u=3373683841,3218464118&fm=253&app=138&f=JPEG&fmt=auto&q=75?w=500&h=500"
+                style="width:40px;height: 40px;border-radius:100%;"
+                alt=""
+            />
+            <div style="margin-left: 10px;">1101484149</div>
+        </div>
+        <!-- 导航栏 -->
+        <div style="flex1">
+            <div class="Daohang">
+                <a href="https://www.bilibili.com/video/BV1GJ411x7h7">好康的</a>
+            </div>
+            <div class="Daohang">
+                <a href="http://mms0.baidu.com/it/u=3373683841,3218464118&fm=253&app=138&f=JPEG&fmt=auto&q=75?w=500&h=500">头像原链接</a>
+            </div>
+            <div class="Daohang">
+                <a href="https://github.com/1101484149/1101484149/upload">源代码</a>
+            </div>
+            <div class="Daohang">暂无导航</div>
+            <div class="Daohang">暂无导航</div>
+        </div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 flex column">
+        <!--内容区-->
+        <div style="overflow: auto;" class="flex1 flex">
+            <!--左区-->
+            <div style="flex:3" class="flex column mg8">
+                <!--列表区-->
+                <div class="flex column ">
+                    <!--列表项-->
+                    <div style="height:160px" class="Baise mgt8 yinying yinying flex column zhuZhoujuZhong jiaoChazhoujuZhong">
+                        <div>我也不知道写点啥,有了就行了</div>
+                    </div>
+                    <div style="height:160px" class="Baise mgt8 yinying yinying  flex column zhuZhoujuZhong jiaoChazhoujuZhong">
+                        <div>PS:没做移动适配，建议使用电脑打开</div>
+                    </div>
+                    <div style="height:160px" class="Baise mgt8 yinying yinying"></div>
+                    <div style="height:160px" class="Baise mgt8 yinying yinying"></div>
+                </div>
+            </div>
+            <!--右区-->
+            <div style="flex:1" class="flex column mgr8 mgt8">
+                <!-- 广告区 -->
+                <div style="height:668px" class="Baise yinying mgt8 flex column zhuZhoujuZhong jiaoChazhoujuZhong">
+                    <div style="font-size:50px ;" >广告位招租</div>
+                    <div>详情请联系1101484149@qq.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
